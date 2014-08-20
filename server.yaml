@@ -6,5 +6,5 @@ options:
     hostname: 'host.domain.com'
     ip: '10.10.10.10'
     netmask: '255.255.255.0'
-    gw: '10.10.10.1'
+    gateway: '10.10.10.1'
     dns: '4.2.2.2'
