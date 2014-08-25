@@ -1,7 +1,7 @@
 mkbootiso
 =========
 
-Program creates a boot ISO on per host basis with static IP assigments.  This is useful for when PXE boot or DHCP is not an option, and you want to build a server in place.  This program requires an extracted iso file that can be written too by the program.
+Program creates a boot ISO on per host basis with static IP assigments.  This is useful for when PXE boot or DHCP is not an option, and you want to build a server in place.  This program requires an extracted iso file that can be written by the program.
 
 Prep:
  
