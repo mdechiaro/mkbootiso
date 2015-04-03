@@ -22,7 +22,7 @@ class MkBootISO(object):
         """argparse command line options."""
 
         parser = argparse.ArgumentParser(
-            description='vCenter Tools CLI'
+            description='Creates a per host custom boot iso.'
         )
 
         parser.add_argument(
