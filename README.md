@@ -9,13 +9,12 @@ Prep:
 
 - Mount it using the loop option:
 
-        mount -o loop CentOS-6.5-x86_64-minimal.iso /tmp/centos6/
+        mount -o loop CentOS-6.5-x86_64-minimal.iso /mnt/tmp/centos6/
 
-- Copy necessary contents to a folder.  In this example, only isolinux/ is needed (copy EFI if you need it to boot using EFI).  Copying only mandatory files will keep the size down to save bandwidth and disk space.  
+- Copy necessary contents to a folder.  In this example, only isolinux/ is needed.  Copying only mandatory files will keep the size down to save bandwidth and disk space.  
 
-        cp -a /tmp/centos6/isolinux/ /tmp/
+        cp -a /mnt/tmp/centos6/isolinux/ /mnt/isos/
 
 Usage:
 
-    ./mkbootiso.py server.yaml outfile.iso
-
+    ./mkbootiso.py -s /mnt/isos/centos6/ -n hostname.iso -f ~/hostname.yaml
