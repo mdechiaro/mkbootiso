@@ -26,13 +26,8 @@ class MkBootISO(object):
         )
 
         parser.add_argument(
-            '--source', '-s', metavar='',
-            help='source directory: /path/to/iso/'
-        )
-
-        parser.add_argument(
-            '--output', '-o', metavar='', default='/tmp/',
-            help='output directory: /tmp/ default: %(default)s'
+            '--file', '-f', metavar='',
+            help='yaml file with kickstart info'
         )
 
         parser.add_argument(
@@ -41,9 +36,15 @@ class MkBootISO(object):
         )
 
         parser.add_argument(
-            '--file', '-f', metavar='',
-            help='yaml file with kickstart info'
+            '--output', '-o', metavar='', default='/tmp/',
+            help='output directory: /tmp/ default: %(default)s'
         )
+
+        parser.add_argument(
+            '--source', '-s', metavar='',
+            help='source directory: /path/to/iso/'
+        )
+
 
         self.opts = parser.parse_args()
         self.help = parser.print_help
